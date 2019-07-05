@@ -1,8 +1,8 @@
 # Flutter NFC Reader
 
-![](https://raw.githubusercontent.com/matteocrippa/flutter-nfc-reader/master/.github/nfc-flutter-logo.jpg)
-
 A new flutter plugin to help developers looking to use internal hardware inside iOS or Android devices for reading NFC tags.
+
+Forked from matteocrippa. I developed it further and added some improvements and fixes, so it will work with both iOS and Android on the latest flutter version (current ~1.5)
 
 The system activate a pooling reading session that stops automatically once a tag has been recognised.
 You can also trigger the stop event manually using a dedicated function.
@@ -22,7 +22,7 @@ Add to pubspec.yaml:
 dependencies:
   flutter_nfc_reader:
     git:
-      url: git://github.com/matteocrippa/flutter-nfc-reader.git
+      url: https://github.com/f1re/flutter-nfc-reader
       ref: master
 ```
 

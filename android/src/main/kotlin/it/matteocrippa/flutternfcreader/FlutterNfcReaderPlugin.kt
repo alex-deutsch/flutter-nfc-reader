@@ -39,7 +39,7 @@ class FlutterNfcReaderPlugin(val registrar: Registrar) : MethodCallHandler, Even
     private var kError = "nfcError"
     private var kStatus = "nfcStatus"
 
-    private var READER_FLAGS = NfcAdapter.FLAG_READER_NFC_A
+    private var READER_FLAGS: Int =  NfcAdapter.FLAG_READER_NFC_A or NfcAdapter.FLAG_READER_NFC_B or NfcAdapter.FLAG_READER_NFC_F or NfcAdapter.FLAG_READER_NFC_V
 
     companion object {
         @JvmStatic
